@@ -7,11 +7,11 @@ package tunnel
 
 // tunnel read/write timeout
 const (
-	PacketSize = 65536
+	PacketSize = 524288
 )
 
 var (
-	Timeout  int64 = 0
+	Timeout  int64 = 3
 	LogLevel uint  = 1
 	mpool          = NewMPool(PacketSize)
 )
